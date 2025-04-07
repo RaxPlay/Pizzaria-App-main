@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.pusheenC{
+    width: 60px;
+    position: absolute;
+    left: 30.9%;
+    top: 6%;
+    transform: scaleX(-1) 
+    rotate(-32deg);
+}
+
+.pusheenA{
+    width: 80px;
+    position: absolute;
+    left: 73.3%;
+    top: 5.8%;
+    transform: rotate(45deg);
+}
+
+header{
+    background-color: #EB2020;
+    height: 260px;
+    color: rgb(255, 255, 255);
+    font-size: 2.6rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 0px 0px 20px 20px;
+}
+
+header #welcome{
+    display: block;
+    text-decoration: underline;
+}
+
+header .phrase{
+    font-size: 1.6rem;
+    font-style: italic;
+    text-align: center;
+    height: 30px;
+}
+
+header .pusheen2{
+    position: relative;
+    top: 21.2px;
+    left: 15px;
+}
+
+#action{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;    
+}
+
+.order{
+    margin-top: 25px;
+    padding: 5px 15px;
+    background-color: #EB2020;
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+    transition: 0.25s;
+}
+
+.order:hover{
+    background-color: #cf2020;
+    border-radius: 10px;
+    transform: scale(1.05);
+}
+
+#section-for-landing{
+    display: flex;
+}
+
+.pusheenPizzaMode{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-self: center;
+}
+
+#landing{
+    width: 48%;
+    margin: auto;
+    margin-top: 90px;
+    text-align: center;   
+    background-color: #EB2020;
+    color: white;
+    padding: 20px 60px;
+    border-radius: 20px;
+}
+
+#landing h2{
+    font-size: 2.4rem;
+    text-decoration: underline;
+}
+
+#landing .product{
+    margin-top: 60px;
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#landing .product img{
+    margin-left: 20px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+#landing p{
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+#landing .product .Neapolitan{
+    position: relative;
+    left: 53%;
+}
+
+footer{
+    margin-top: 90px;
+    background-color: #cf2020;
+    color: white;
+    text-align: center;
+    height: 150px;
+    border-radius: 20px 20px 0px 0px;
+    padding: 20px;
+}
+
+footer h2{
+    text-decoration: underline;
+}
+
+footer .pusheen-footer{
+    position: absolute;
+    left: 48%;
+    top: 182.9%;
+    height: 80px;
+}

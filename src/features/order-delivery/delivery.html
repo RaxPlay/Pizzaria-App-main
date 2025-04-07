@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michi's Pizza</title>
+    <link rel="stylesheet" href="delivery.css">
+    <script src="https://kit.fontawesome.com/ba998730f8.js" crossorigin="anonymous"></script>
+    <script defer src="delivery.js"></script>
+</head>
+<body>
+    <img src="/src/components/fotos/pusheen pizza.gif" alt="" class="pusheen-pizza">
+    <img src="/src/components/fotos/pusheen-removebg-preview.png" alt="" class="pusheen">
+
+    <section id="get-data">
+        <label for="address">
+            <h2 class="get-address-q">Where are we delivering?</h2>
+        </label>
+
+        <form class="get-address">
+            <div class="street-div">
+                <label for="street">Street</label>
+                <input type="text" class="street" required> 
+            </div>
+        
+            <div class="city-div">
+                <label for="city">City</label>
+                <input type="text" class="city" required>
+            </div>
+
+            <div class="state-div">
+                <label for="state">State</label>
+                
+                <select name="" id="state-select" required>
+                    <option value="">Select a State</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option> 
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                </select>
+            </div>
+            
+            <div class="ZIP-div">
+                <label for="ZIP">ZIP/Postal Code</label>
+
+                <input type="text" class="zip-code" required>
+            </div>
+
+            <div class="country-div">
+                <label for="country">Country</label>
+
+                <select name="" id="country-select" required>
+                    <option value="">Select a Country</option>
+                    <option value="USA">USA</option>
+                </select>
+            </div>
+
+            <button class="get-data-btn">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
