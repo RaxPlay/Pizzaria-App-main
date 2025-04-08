@@ -9,8 +9,8 @@ body{
 .pusheenC{
     width: 60px;
     position: absolute;
-    left: 30.9%;
-    top: 6%;
+    left: 32.9%;
+    top: 5.5%;
     transform: scaleX(-1) 
     rotate(-32deg);
 }
@@ -18,8 +18,8 @@ body{
 .pusheenA{
     width: 80px;
     position: absolute;
-    left: 73.3%;
-    top: 5.8%;
+    left: 70.6%;
+    top: 5.2%;
     transform: rotate(45deg);
 }
 
@@ -142,6 +142,6 @@ footer h2{
 footer .pusheen-footer{
     position: absolute;
     left: 48%;
-    top: 182.9%;
+    top: 164.3%;
     height: 80px;
 }
