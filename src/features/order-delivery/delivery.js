@@ -1,27 +1,46 @@
 //Variables
 const getDataBtn = document.querySelector('.get-data-btn');
+const deliveryTimeBtn = document.querySelector('.get-delivery-time-btn')
+
 const street = document.querySelector('.street');
 const city = document.querySelector('.city');
 const zipCode = document.querySelector('.zip-code');
 const country = document.querySelector('#country-select');
 const state = document.querySelector('#state-select');
 const deliveryTimeDiv = document.querySelector('#delivery-time')
+const deliveryTime = document.querySelector('#select-time')
+const deliveryDay = document.querySelector('#select-day')
 
 getDataBtn.addEventListener('click', function () {
-    let address = {
+    deliveryTimeDiv.style.display = "block"
+    deliveryTimeDiv.classList.add('delivery-time-transition');
+
+    return false;
+});
+
+deliveryTimeBtn.addEventListener('click', function(){
+    let addressData = {
         street: street.value,
         city: city.value,
         state: state.value,
         zipCode: zipCode.value,
         country: country.value,
     }; 
+    let timeData = {
+        day: deliveryDay.value,
+        time: deliveryTime.value
+    }
 
-    deliveryTimeDiv.classList.add('delivery-time-transition');
-    deliveryTimeDiv.style.display = `flex`;
+    console.log(addressData);
+    console.log(timeData);
 
-
-    console.log(address);
-    console.log(deliveryTimeDiv);
-
-    return false;
-});
+    if(addressData.street === "" || addressData.city === "" || addressData.state === "" ||
+    addressData.zipCode === "" || addressData.country === ""){
+        alert("There was an error, please insert a valid address")
+        location.reload();
+    }
+    else {
+        window.open("../menu/show-menu.html", _blank)
+        return false;
+    }
+})
