@@ -40,7 +40,7 @@ deliveryTimeBtn.addEventListener('click', function(){
         location.reload();
     }
     else {
-        window.open("../menu/show-menu.html", _blank)
+        window.open("../menu/show-menu.html", "_self")
         return false;
     }
 })
