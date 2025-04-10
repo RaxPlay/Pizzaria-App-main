@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+}
+
+.menu-header{
+    background-color: #EB2020;
+    color: white;
+    text-decoration: underline;
+    font-size: 2rem;
+    text-align: center;
+    padding: 60px;
+    margin-bottom: 80px;
+    border-radius:0px 0px 20px 20px ;
+}
+
+.choose-pizza{
+    background-color: #EB2020;
+    padding: 80px 30px 80px 80px;
+    margin: auto;
+    border-radius: 20px;
+    width: 50%;
+}
+
+.choose-pizza .product{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.choose-pizza img{
+    margin-left: 40px;
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+}
+.choose-pizza p{
+    text-align: center;
+    color: white;
+    
+}
+.choose-pizza a{
+    text-decoration: none;
+}
