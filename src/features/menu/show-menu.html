@@ -3,76 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Michi's Pizza - Menu</title>
     <link rel="stylesheet" href="show-menu.css">
+    <script src="https://kit.fontawesome.com/ba998730f8.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="menu-header">
         <h1>Select Your Pizza</h1>
+        <a href="../cart/cart.html" class="cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+        </a>
     </header>
-
-
+    
+    <a href="../create-own-pizza/create-pizza.html" class="create-own-pizza">
+        <button class="create-own-pizza-btn">
+            Create Your Own Pizza
+        </button>
+    </a>
 
     <section class="choose-pizza">
         <!--Most part copied from landing page--> 
         <div class="product">
-            <a href="">
+            <button onclick="addToCart(`pepperoni`)">
                 <div class="pepperoni">
                     <img src="/src/components/pizza photos/pepperoni pizza.png" alt="">
+                    <p class="pepperoni-price">11.99$</p>
                     <p class="description">Pepperoni Pizza</p>
                 </div>
-            </a>
-            
-            <button class="create-own-pizza-btn">
-                Create Your Own Pizza
             </button>
 
-            <div class="Neapolitan">
-                <img src="/src/components/pizza photos/Napolitana.jpg" alt="">
-                <p class="description">Neapolitan Pizza</p>
-            </div>
-
-            <div class="Hawai">
-                <img src="/src/components/pizza photos/Hawaiian Pizza.jpg" alt="">
-                <p class="description">Hawaiian Pizza 🤮🤮</p>
-            </div>
-
-            <div class="Portuguese">
-                <img src="/src/components/pizza photos/portuguesa.jpg" alt="" style="height: 297px;">
-                <p class="description">Portuguese Pizza</p>
-            </div>
+            <button onclick="addToCart(`Neapolitan`)">
+                <div class="Neapolitan">
+                    <img src="/src/components/pizza photos/Napolitana.jpg" alt="">
+                    <p class="neapolitan-price">10.99$</p>
+                    <p class="description">Neapolitan Pizza</p>
+                </div>
+            </button>
             
-            <div class="4cheese">
-                <img src="/src/components/pizza photos/4 quesos.webp" alt="">
-                <p class="description">4 Cheese Pizza</p>
-            </div>
+            <button onclick="addToCart(`Hawai`)">
+                <div class="Hawai">
+                    <img src="/src/components/pizza photos/Hawaiian Pizza.jpg" alt="">
+                    <p class="price">13.99$</p>
+                    <p class="description">Hawaiian Pizza 🤮🤮</p>
+                </div>
+            </button>
             
-            <div class="margherita">
-                <img src="/src/components/pizza photos/margherita.jpeg" alt="">
-                <p class="description">Margherita Pizza</p>
-            </div>
+            <button onclick="addToCart(`Portuguese`)">
+                <div class="Portuguese">
+                    <img src="/src/components/pizza photos/portuguesa.jpg" alt="" style="height: 297px;">
+                    <p class="portuguese-price">12.99$</p>
+                    <p class="description">Portuguese Pizza</p>
+                </div>
+            </button>
             
-            <div class="barbecue">
-                <img src="/src/components/pizza photos/BBQ Pizza.jpg" alt="">
-                <p class="description">BBQ Pizza</p>
-            </div>
-
-            <div class="vegetarian">
-                <img src="/src/components/pizza photos/Pizza-vegana-integral.jpg" alt="">
-                <p class="description">Vegetarian Pizza</p>
-            </div>
-
-            <div class="seafood">
-                <img src="/src/components/pizza photos/Seafood Pizza.jpeg" alt="">
-                <p class="description">Seafood Pizza</p>
-            </div>
+            <button onclick="addToCart('4cheese')">
+                <div class="4cheese">
+                    <img src="/src/components/pizza photos/4 quesos.webp" alt="">
+                    <p class="4cheese-price">13.99$</p>
+                    <p class="description">4 Cheese Pizza</p>
+                </div>
+            </button>
             
-            <div class="fugazzeta">
-                <img src="/src/components/pizza photos/Fuggazeta.webp" alt="">
-                <p class="description">Fuggazeta Pizza</p>
-            </div>
+            <button onclick="addToCart('margherita')">
+                <div class="margherita">
+                    <img src="/src/components/pizza photos/margherita.jpeg" alt="">
+                    <p class="margherita-price">12.99$</p>
+                    <p class="description">Margherita Pizza</p>
+                </div>
+            </button>
+            
+            <button onclick="addToCart('barbecue')">
+                <div class="barbecue">
+                    <img src="/src/components/pizza photos/BBQ Pizza.jpg" alt="">
+                    <p class="barbecue-price">14.99$</p>
+                    <p class="description">BBQ Pizza</p>
+                </div>
+            </button>
+            
+            <button onclick="addToCart(`veggies`)">
+                <div class="vegetarian">
+                    <img src="/src/components/pizza photos/Pizza-vegana-integral.jpg" alt="">
+                    <p class="vegetarian-price">9.99$</p>
+                    <p cplass="description">Vegetarian Pizza</p>
+                </div>
+            </button>
+            
+            <button onclick="addToCart(`seafood`)">
+                <div class="seafood">
+                    <img src="/src/components/pizza photos/Seafood Pizza.jpeg" alt="">
+                    <p class="seafood-price">13.99$</p>
+                    <p class="description">Seafood Pizza</p>
+                </div>
+            </button>
+            
+            <button onclick="addToCart()">
+                <div class="fugazzeta">
+                    <img src="/src/components/pizza photos/Fuggazeta.webp" alt="">
+                    <p class="fuggazeta-price">16.99$</p>
+                    <p class="description">Fuggazeta Pizza</p>
+                </div>
+            </button> 
         </div>
     </section>
 
+    <script src="show-menu.js" defer></script>
 </body>
 </html>
